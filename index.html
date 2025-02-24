@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrei Kastseyeu - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            background-color: #e0e0e0; /* Светло-серый фон, как на вашей фотографии */
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        header .profile {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #444;
+        }
+        header p {
+            font-size: 1.5em; /* Увеличил слово "Portfolio" */
+            color: #777;
+            margin: 5px 0 0;
+        }
+        .section {
+            margin: 30px 0;
+        }
+        .section h2 {
+            color: #555;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        .section h2 i {
+            margin-right: 10px;
+            color: #888;
+        }
+        .project {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .project-content {
+            flex: 1;
+            padding-right: 15px;
+        }
+        .project h3 {
+            margin: 0 0 5px;
+            color: #444;
+        }
+        .project p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .project a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .project a:hover {
+            text-decoration: underline;
+        }
+        .project-preview {
+            width: 200px;
+            height: 120px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        }
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            color: #555;
+        }
+        .contact-item i {
+            margin-right: 10px;
+            color: #888;
+            font-size: 1.2em;
+        }
+        .contact-item a {
+            color: #555;
+            text-decoration: none;
+        }
+        .contact-item a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile">
+                <img src="assets/IMG_4913.png" alt="Andrei Kastseyeu Profile" />
+                <div>
+                    <h1>Andrei Kastseyeu</h1>
+                    <p>Portfolio</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="section">
+            <h2><i class="fas fa-folder-open"></i>Projects</h2>
+            <div class="project">
+                <div class="project-content">
+                    <h3>6 Cities</h3>
+                    <p><strong>Type:</strong> React Application</p>
+                    <p><strong>Description:</strong> A robust React application that utilizes state management and asynchronous actions for enhanced user experience.</p>
+                    <p><strong>Link:</strong> <a href="#" target="_blank">6 Cities</a></p>
+                    <p><strong>Stack:</strong> React, Redux, Redux-Thunk</p>
+                </div>
+                <svg width="200" height="120" viewBox="-100 -50 200 120" class="project-preview">
+                    <!-- Фон с закругленными углами -->
+                    <rect width="200" height="120" fill="#f8f9fa" rx="10" />
+                    
+                    <!-- Значок геопозиции (по центру) -->
+                    <g transform="translate(100, 60)"> <!-- Центрируем иконку по центру SVG -->
+                        <!-- Контур метки -->
+                        <path d="M0,-18C-9,-18 -18,-9 -18,0c0,9 9,20 18,28c9-8 18-19 18-28C18,-9 9,-18 0,-18z" 
+                              fill="none" stroke="#444" stroke-width="3" />
+                        <!-- Внутренний круг -->
+                        <circle cx="0" cy="0" r="6" fill="none" stroke="#444" stroke-width="3" />
+                        <!-- Тень (приземление) -->
+                        <ellipse cx="0" cy="30" rx="15" ry="6" fill="none" stroke="#444" stroke-width="3" />
+                        
+                        <!-- Анимация покачивания -->
+                        <animateTransform attributeName="transform" type="rotate"
+                                          values="-3 0 30; 3 0 30; -3 0 30" dur="2s" repeatCount="indefinite" />
+                    </g>
+                    
+                    <!-- Текст -->
+                    <text x="-65" y="60" font-size="16" fill="#666" text-anchor="middle">6 Cities</text>
+                </svg>
+                
+                 
+            </div>
+            <div class="project">
+                <div class="project-content">
+                    <h3>Keksogram</h3>
+                    <p><strong>Type:</strong> JavaScript Application</p>
+                    <p><strong>Description:</strong> A complex JavaScript application demonstrating fundamental concepts and UI.</p>
+                    <p><strong>Link:</strong> <a href="#" target="_blank">kksgram</a></p>
+                    <p><strong>Stack:</strong> HTML, CSS, JavaScript</p>
+                </div>
+                <svg width="200" height="120" viewBox="0 0 200 120" class="project-preview">
+                    <rect width="200" height="120" fill="#f8f9fa" />
+                    <g class="camera">
+                        <!-- Камера -->
+                        <rect x="70" y="40" width="60" height="40" rx="5" ry="5" fill="#444" />
+                        <!-- Объектив -->
+                        <circle cx="100" cy="60" r="15" fill="none" stroke="#fff" stroke-width="3" />
+                        <!-- Вспышка -->
+                        <circle cx="120" cy="45" r="3" fill="#fff">
+                            <animate attributeName="r" values="3;10;3" dur="1.2s" repeatCount="indefinite" />
+                            <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite" />
+                        </circle>
+                    </g>
+                    <text x="10" y="110" font-size="16" fill="#666">keksogram</text>
+                </svg>
+            </div>
+            <div class="project">
+                <div class="project-content">
+                    <h3>Barbershop</h3>
+                    <p><strong>Type:</strong> Website</p>
+                    <p><strong>Description:</strong> A modern website showcasing a barbershop's services with responsive design.</p>
+                    <p><strong>Link:</strong> <a href="https://01andrei.github.io/barbershop2022/" target="_blank">Barbershop</a></p>
+                    <p><strong>Stack:</strong> HTML, CSS</p>
+                </div>
+                
+                <svg width="200" height="120" viewBox="0 0 200 120" class="project-preview">
+                    <rect width="200" height="120" fill="#f8f9fa" />
+                    <g class="comb" transform="rotate(45 100 60)">
+                        <!-- Основа расчески (длиннее) -->
+                        <rect x="60" y="50" width="80" height="10" fill="#826550" rx="2" />
+                        <!-- Зубцы -->
+                        <rect x="65" y="60" width="4" height="20" fill="#826550">
+                            <animate attributeName="height" values="20;15;20" dur="1.5s" repeatCount="indefinite" />
+                        </rect>
+                        <rect x="75" y="60" width="4" height="20" fill="#826550">
+                            <animate attributeName="height" values="20;15;20" dur="1.5s" repeatCount="indefinite" begin="0.1s" />
+                        </rect>
+                        <rect x="85" y="60" width="4" height="20" fill="#826550">
+                            <animate attributeName="height" values="20;15;20" dur="1.5s" repeatCount="indefinite" begin="0.2s" />
+                        </rect>
+                        <rect x="95" y="60" width="4" height="20" fill="#826550">
+                            <animate attributeName="height" values="20;15;20" dur="1.5s" repeatCount="indefinite" begin="0.3s" />
+                        </rect>
+                        <rect x="105" y="60" width="4" height="20" fill="#826550">
+                            <animate attributeName="height" values="20;15;20" dur="1.5s" repeatCount="indefinite" begin="0.4s" />
+                        </rect>
+                        <!-- Дырочка в ручке -->
+                        <circle cx="130" y="55" r="4" fill="#f8f9fa" />
+                    </g>
+                    <text x="10" y="105" font-size="14" fill="#666">Barbershop</text>
+                </svg>
+                  
+                
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-address-card"></i>Contact Information</h2>
+            <div class="contact">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Minsk, Belarus</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:job.kosteev@gmail.com">job.kosteev@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+375292573772">+375 (29) 257-37-72</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/01Andrei" target="_blank">01Andrei</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
